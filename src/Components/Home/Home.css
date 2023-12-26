@@ -1,0 +1,80 @@
+*{
+    position: relative;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 60%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 70%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+  text-align: center;
+  align-items: center;
+}
+.swiper-slide:hover {
+    
+    background-size: cover;
+    background-position: center center;
+    transition: 0.8s linear;
+    transform: scale(1.1);
+}
+.swiper-slide:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-size: 220px;
+    background-position: center bottom;
+    filter: blur(8px);
+    transition: 0.8s linear;
+}
+.swiper-slide:hover:before {
+  filter: unset !important;
+  transition: 0.8s linear;
+}
+
+     

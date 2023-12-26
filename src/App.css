@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  
+    position: relative;
+    height: 100%;
+}
+.App_main{
+  position: absolute;
+  top: 2.3rem;
+}
